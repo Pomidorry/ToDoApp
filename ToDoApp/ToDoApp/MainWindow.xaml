@@ -1,0 +1,31 @@
+﻿
+    <Window x:Class="ToDoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoApp"
+        mc:Ignorable="d"
+        Title="ToDo Application" Height="450" Width="452" Background="#EDE7F6" Closed="Window_Closed" Loaded="Window_Loaded"
+            >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="263*"/>
+            <RowDefinition Height="117*"/>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="Tasks" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,45,0,0" Background="#D1C4E9" Grid.RowSpan="3"  MouseDoubleClick="Tasks_MouseDoubleClick" FontStyle="Oblique"/>
+        <StackPanel Orientation="Horizontal">
+            <RadioButton x:Name="R1" Content="Усі" Margin = "15" Background="Purple" FontStyle="Oblique" Checked="R1_Checked" />
+            <RadioButton x:Name="R2" Content="Не виконані" Margin = "15" Background="Purple" FontStyle="Oblique" Checked="R2_Checked"/>
+            <RadioButton x:Name="R3" Content="Виконані" Margin = "15" Background="Purple" FontStyle="Oblique" Checked="R3_Checked"/>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,7,0,0" >
+            <Button x:Name="B1" Content="Додати" Margin="20,20,20,20" Width="88" Background="#B39DDB" Click="B1_Click"/>
+            <Button x:Name="B2" Content="Завершити" Margin="20,20,20,20" Background="#B39DDB" Click="B2_Click" />
+            <Button x:Name="B3" Content="Видалити" Width="105" Margin="20,20,20,20"  Background="#B39DDB" Click="B3_Click" />
+        </StackPanel>
+
+    </Grid>
+</Window>

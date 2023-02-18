@@ -1,0 +1,27 @@
+﻿<Window x:Class="ToDoApp.AddTask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ToDoApp"
+        mc:Ignorable="d"
+        Title="Нова задача" Height="350" Width="400" Background="#EDE7F6">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="117*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="cancel"  Background="#B39DDB"  Content="Відміна" Margin="20,0,20,20" Click="cancel_Click" FontStyle="Oblique"/>
+            <Button x:Name="save"  Background="#B39DDB"  Content="Зберегти" Margin="20,0,20,0" Click="save_Click" FontStyle="Oblique"/>
+        </StackPanel>
+        <StackPanel>
+            <TextBlock TextWrapping="Wrap" Text="Назва задачі" Margin="10,10,0,20" FontStyle="Oblique"/>
+            <TextBox x:Name="TaskBox" TextWrapping="Wrap" Width="120" HorizontalAlignment="Left" Margin="10,0,0,0" FontStyle="Oblique"  Background="#D1C4E9"/>
+            <CheckBox x:Name="check" Content="Задача виконана" Margin="10,0,0,0" FontStyle="Oblique"/>
+            <TextBlock TextWrapping="Wrap" Text="Опис" Margin="10,10,0,0" FontStyle="Oblique"/>
+            <TextBox  x:Name="Description" TextWrapping="Wrap"  Width="366" FontStyle="Oblique" TextAlignment="Justify" HorizontalAlignment="Left" Margin="10,0,0,0" Height="74" Background="#D1C4E9"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
