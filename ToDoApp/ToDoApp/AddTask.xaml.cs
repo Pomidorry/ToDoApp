@@ -43,7 +43,7 @@ namespace ToDoApp
             }
             else
             {
-                TaskBox.Background = Brushes.Magenta;
+                TaskBox.Background = Brushes.Red;
             }
         }
     }

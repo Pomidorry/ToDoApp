@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\ToDoApp\ToDoApp\obj\Debug\
+C:\GitToDoApp\ToDoApp\ToDoApp\obj\Debug\
 ToDoApp
 none
 false
 DEBUG;TRACE
-C:\ToDoApp\ToDoApp\App.xaml
+C:\GitToDoApp\ToDoApp\ToDoApp\App.xaml
 2602727525
 
-7441314928
-16-1073208195
+8-1640773690
+16350287662
 AddTask.xaml;MainWindow.xaml;
 
-False
+True
 
